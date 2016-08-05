@@ -1,0 +1,9 @@
+pane	0	1	:fish	0	:	1	:/home/matteus	1	fish	:
+pane	0	2	:fish	0	:	1	:/home/matteus	1	fish	:
+pane	0	3	:[tmux]	0	:-	1	:/home/matteus/workspace/scala-coursera	1	fish	:
+pane	0	4	:fish	1	:*	1	:/home/matteus/workspace/scala-coursera	1	fish	:
+window	0	1	0	:	c045,170x45,0,0,8
+window	0	2	0	:	c03f,170x45,0,0,2
+window	0	3	0	:-	c046,170x45,0,0,9
+window	0	4	1	:*	6050,170x45,0,0,11
+state	0	

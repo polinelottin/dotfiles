@@ -1,0 +1,7 @@
+pane	0	1	:htop	1	:*	1	:/home/matteus	1	htop	:htop
+pane	0	2	:fish	0	:	1	:/home/matteus	1	fish	:
+pane	0	5	:[tmux]	0	:-	1	:/home/matteus	1	fish	:
+window	0	1	1	:*	c03d,170x45,0,0,0
+window	0	2	0	:	c03f,170x45,0,0,2
+window	0	5	0	:-	c044,170x45,0,0,7
+state	0	
