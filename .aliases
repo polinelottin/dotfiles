@@ -1,0 +1,25 @@
+# ls with color
+alias ls='ls --color=auto'
+
+# History
+alias hisgr='_historygrep(){ history | grep $1; }; _historygrep'
+
+# Nvim
+alias vim=nvim
+
+# Python
+alias activate='source venv/bin/activate'
+
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../../"
+
+# Tmux
+alias tmux='tmux -2' # give -2 flag to tmux so it runs with 256 colors
+
+# Condense
+alias e='exit'
+
+alias cl=clear
+alias l=ls
