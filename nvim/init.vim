@@ -37,6 +37,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dracula/vim'
+Plug 'jonatasbaldin/vim-tips'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -51,12 +53,17 @@ let g:solarized_termcolors=256
 " Open Nerd Tree
 map <C-n> :NERDTreeToggle<CR>
 nmap <leader>n :NERDTreeFind<CR>
+let g:NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 " Vim Airline
-let g:airline_powerline_fonts=1
+
+" let g:airline_powerline_fonts=1
 let g:airline_theme='jellybeans'
 let g:airline#extensions#tabline#enabled=0
 set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h20
+
+" Vim Tips
+autocmd VimEnter * call Tip()
 
 " dont use arrowkeys
 noremap <Up> <NOP>

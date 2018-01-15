@@ -1,6 +1,3 @@
-# ls with color
-alias ls='ls --color=auto'
-
 # History
 alias hisgr='_historygrep(){ history | grep $1; }; _historygrep'
 

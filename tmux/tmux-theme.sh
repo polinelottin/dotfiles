@@ -1,26 +1,23 @@
-# Start windows and panes at 1, not 0
-set -g base-index 1
-set -g pane-base-index 1
+# status bar
+set -g status-interval 1
+set -g status-justify centre
+set -g status-bg colour235
+set -g status-fg colour15
 
-set-option -g repeat-time 0
+# user@hostname on left of status bar
+set -g status-left-length 60
+set -g status-left "#(id -un)@#h"
 
-# Removes ESC delay
-set -sg escape-time 0
+# clock on right of status bar
+set -g status-right-length 60
+set -g status-right "#{battery_icon}#{battery_percentage} - %d %b %Y - %H:%M:%S"
 
-# List of plugins
-set -g @tpm_plugins '                 \
-     caiogondim/maglev                \
-     tmux-plugins/tpm                 \
-     tmux-plugins/tmux-sensible       \
-     tmux-plugins/tmux-resurrect      \
-     tmux-plugins/tmux-continuum      \
-     tmux-plugins/tmux-yank           \
-     tmux-plugins/tmux-pain-control   \
-     tmux-plugins/tmux-copycat        \
-     tmux-plugins/tmux-open           \
-     tmux-plugins/tmux-battery        \
-     tmux-plugins/tmux-cpu            \
-'
+# default window title colors
+set-window-option -g window-status-fg colour245
+set-window-option -g window-status-bg default
+set -g window-status-format "#I #W"
 
-# Initialize TMUX plugin manager
-run '~/.tmux/plugins/tpm/tpm'
+# active window title colors
+set-window-option -g window-status-current-fg default
+set-window-option -g window-status-current-bg default
+set-window-option -g  window-status-current-format "#[bold]#I #W"
