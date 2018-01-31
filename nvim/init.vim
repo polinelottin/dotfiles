@@ -1,3 +1,4 @@
+source ~/.config/nvim/plugins.vim
 " gnome sounds off
 set vb
 
@@ -29,20 +30,6 @@ set listchars=tab:¦\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 " mandatory defaults
 set nocompatible
 filetype off
-call plug#begin('~/.config/nvim/plugged')
-
-Plug 'flazz/vim-colorschemes'
-Plug 'scrooloose/nerdtree'
-Plug 'jiangmiao/auto-pairs'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'dracula/vim'
-Plug 'jonatasbaldin/vim-tips'
-Plug 'airblade/vim-gitgutter'
-
-call plug#end()
-
-syntax on
 filetype plugin indent on
 
 " Choose the colorscheme
@@ -63,7 +50,7 @@ let g:airline#extensions#tabline#enabled=0
 set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h20
 
 " Vim Tips
-autocmd VimEnter * call Tip()
+"autocmd VimEnter * call Tip()
 
 " dont use arrowkeys
 noremap <Up> <NOP>
